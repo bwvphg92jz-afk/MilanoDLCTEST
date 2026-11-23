@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milano — клиент Minecraft 1.21.11</title>
+<meta name="description" content="Milano — клиент для Minecraft 1.21.11 на Fabric. Красивый интерфейс, обход на популярных серверах, собственный лаунчер.">
+<meta name="theme-color" content="#07080c">
+<meta property="og:title" content="Milano — клиент Minecraft 1.21.11">
+<meta property="og:description" content="Клиент Milano для Minecraft 1.21.11 на Fabric: красивый интерфейс, обход на популярных серверах, запуск в один клик.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo.png">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Milano","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","softwareVersion":"1.0.0","description":"Клиент Milano для Minecraft 1.21.11 на Fabric: красивый интерфейс, обход на популярных серверах, запуск в один клик."}</script>
+</head>
+<body>
+<a class="skip-link" href="#features">Перейти к возможностям</a>
+<div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<header class="nav" id="nav">
+<div class="nav-inner">
+<a class="brand" href="#top"><img src="assets/logo-noncolor.png" alt="Milano" class="brand-mark"><span class="brand-name">Milano</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="#features">Возможности</a>
+<a href="prices.html">Цены</a>
+<a href="#start">Старт</a>
+<a href="#faq">FAQ</a>
+<a href="#about">Комьюнити</a>
+</nav>
+<div class="nav-actions">
+<a href="login.html" class="btn btn-primary nav-cta" id="navAuthBtn">Войти</a>
+<button class="nav-burger" id="navBurger" aria-label="Меню" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="hero-content hero-in">
+<h1 class="hero-title">Milano</h1>
+<p class="hero-sub">Клиент, созданный чтобы выигрывать. Чистый интерфейс, точные модули и всё, что нужно для комфортной игры на любимых серверах.</p>
+</div>
+</section>
+<div class="servers-strip" aria-hidden="true">
+<div class="servers-track"><div class="servers-group"><span>SpookyTime</span><i></i><span>FunTime</span><i></i><span>HolyWorld</span><i></i><span>ReallyWorld</span><i></i><span>Anarchy</span><i></i></div><div class="servers-group"><span>SpookyTime</span><i></i><span>FunTime</span><i></i><span>HolyWorld</span><i></i><span>ReallyWorld</span><i></i><span>Anarchy</span><i></i></div><div class="servers-group"><span>SpookyTime</span><i></i><span>FunTime</span><i></i><span>HolyWorld</span><i></i><span>ReallyWorld</span><i></i><span>Anarchy</span><i></i></div><div class="servers-group"><span>SpookyTime</span><i></i><span>FunTime</span><i></i><span>HolyWorld</span><i></i><span>ReallyWorld</span><i></i><span>Anarchy</span><i></i></div><div class="servers-group"><span>SpookyTime</span><i></i><span>FunTime</span><i></i><span>HolyWorld</span><i></i><span>ReallyWorld</span><i></i><span>Anarchy</span><i></i></div><div class="servers-group"><span>SpookyTime</span><i></i><span>FunTime</span><i></i><span>HolyWorld</span><i></i><span>ReallyWorld</span><i></i><span>Anarchy</span><i></i></div></div>
+</div>
+<section class="section" id="features">
+<div class="section-head reveal"><p class="eyebrow">Что внутри</p><h2 class="section-title">Возможности Milano</h2><p class="section-lead">Всё, что нужно для комфортной игры. Ничего лишнего — только то, что работает.</p></div>
+<div class="tabs reveal" data-tabs>
+<div class="tab-buttons" role="tablist" aria-label="Возможности">
+<button class="tab-btn active" type="button" data-tab="0">Обход</button>
+<button class="tab-btn" type="button" data-tab="1">Интерфейс</button>
+<button class="tab-btn" type="button" data-tab="2">Скорость</button>
+<button class="tab-btn" type="button" data-tab="3">Версия</button>
+<button class="tab-btn" type="button" data-tab="4">Косметика</button>
+<button class="tab-btn" type="button" data-tab="5">Поддержка</button>
+</div>
+<div class="tab-panels">
+<article class="tab-panel active"><h3>Обход на популярных серверах</h3><p>SpookyTime, FunTime, HolyWorld, ReallyWorld, Anarchy — Milano работает там, где другие клиенты не запускаются или быстро падают.</p></article>
+<article class="tab-panel"><h3>Прекрасный интерфейс</h3><p>Чистое меню, понятные настройки и аккуратный HUD. Ничего лишнего, всё под рукой и приятно выглядит.</p></article>
+<article class="tab-panel"><h3>Быстро и стабильно</h3><p>Клиент на Fabric: быстрый запуск, без лагов и вылетов. Стабильная работа даже в долгой игре.</p></article>
+<article class="tab-panel"><h3>Всегда актуальная версия</h3><p>Minecraft 1.21.11 и актуальный Fabric. Обновления выходят под новые версии игры.</p></article>
+<article class="tab-panel"><h3>Косметика и стиль</h3><p>Шляпы, крылья, питомцы и боди. Твой образ видят другие игроки Milano.</p></article>
+<article class="tab-panel"><h3>Поддержка и комьюнити</h3><p>Поможем с установкой и настройкой, ответим на вопросы и подскажем, если что-то не запускается.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="cosmetics">
+<div class="section-head reveal"><p class="eyebrow">Косметика</p><h2 class="section-title">Выделяйся в игре</h2><p class="section-lead">Четыре типа косметики уже лежат в клиенте. Твой образ видят другие игроки Milano.</p></div>
+<p class="cosmetics-line reveal">Шляпы <i>·</i> Крылья <i>·</i> Питомцы <i>·</i> Боди</p>
+<p class="cosmetics-text reveal">Головные уборы поверх скина, вингсы за спиной в лобби и в полёте на элитре, компаньоны, которые следуют за тобой по миру, и нательная косметика для завершённого образа — не один аксессуар, а твой стиль целиком.</p>
+</section>
+<section class="section" id="requirements">
+<div class="section-head reveal"><p class="eyebrow">Без заморочек</p><h2 class="section-title">Ничего настраивать не надо</h2></div>
+<div class="launch-story reveal">
+<p>Milano ставится и запускается сам. <b>Всё уже внутри</b> — Minecraft, Fabric и сам клиент лежат в лаунчере, отдельно качать версии и собирать папки вручную не нужно.</p>
+<p>При первом запуске лаунчер сам скачает игру в <b>C:/Milano</b>, разложит всё по местам и дальше будет запускать Milano сразу. <b>Настройки из коробки</b> — готовые пресеты под популярные сервера уже внутри, а новая версия подтянется сама, без переустановки руками.</p>
+</div>
+</section>
+<section class="section" id="about">
+<div class="section-head reveal"><p class="eyebrow">Комьюнити</p><h2 class="section-title">Ты не останешься один на один с клиентом</h2><p class="section-lead">Milano — это не только программа, но и люди вокруг неё.</p></div>
+<div class="voices">
+<blockquote class="voice reveal"><p>«Не запускается или не заходит на сервер? Напиши — разберёмся и доведём до игры, а не отправим читать инструкцию.»</p><cite>Живая поддержка</cite></blockquote>
+<blockquote class="voice reveal"><p>«Что просят игроки, то и попадает в следующие версии. Предложить идею или сообщить о проблеме можно в любой момент.»</p><cite>Обновления по отзывам</cite></blockquote>
+<blockquote class="voice reveal"><p>«Косметику видят другие игроки Milano, клиент показывается в статусе Discord, а на сервер заходите одной компанией.»</p><cite>Играй с друзьями</cite></blockquote>
+</div>
+</section>
+<section class="section" id="start">
+<div class="section-head reveal"><p class="eyebrow">Старт за минуту</p><h2 class="section-title">Как начать играть</h2><p class="section-lead">Три шага — и ты в игре. Отдельно ставить Minecraft, Fabric и мод не нужно.</p></div>
+<div class="start-flow">
+<div class="flow-step reveal"><span class="flow-num">1</span><h3>Купить клиент</h3><p>Выбери тариф на странице Цены и оплати. Доступ откроется сразу после покупки.</p></div>
+<span class="flow-arrow" aria-hidden="true">→</span>
+<div class="flow-step reveal"><span class="flow-num">2</span><h3>Скачать лаунчер и войти</h3><p>Скачай Milano Launcher из аккаунта и войди под своим логином и паролем.</p></div>
+<span class="flow-arrow" aria-hidden="true">→</span>
+<div class="flow-step reveal"><span class="flow-num">3</span><h3>Запустить игру</h3><p>Нажми «Запустить». При первом запуске лаунчер сам скачает Minecraft 1.21.11 и Fabric в C:/Milano и откроет игру.</p></div>
+</div>
+</section>
+<section class="section cta-section"><div class="cta-panel reveal"><p class="eyebrow">Твой ход</p><h2 class="cta-title">Готов зайти в игру?</h2><p class="section-lead">Купи клиент, войди в аккаунт и запускай игру в один клик. Через минуту ты уже на сервере — без ручной установки Minecraft и Fabric.</p><div class="cta-actions"><a href="login.html" class="btn btn-primary btn-lg">Войти</a><a href="prices.html" class="btn btn-ghost btn-lg">Смотреть цены</a></div><p class="download-meta">Windows 10/11 · Minecraft 1.21.11 · Fabric · Первый запуск сам скачает игру в C:/Milano</p></div></section>
+<section class="section" id="faq">
+<div class="section-head reveal"><p class="eyebrow">Вопросы</p><h2 class="section-title">Частые вопросы</h2></div>
+<div class="faq-list reveal">
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Сколько стоит Milano?<span class="faq-arrow"></span></button><div class="faq-a"><p>Цены на странице Цены: месяц, 3 месяца и навсегда. Выбери тариф и оплати — доступ откроется сразу после покупки.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Как купить клиент?<span class="faq-arrow"></span></button><div class="faq-a"><p>Открой страницу Цены, выбери тариф и оплати. После оплаты войди в аккаунт — лаунчер станет доступен для скачивания.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Нужен ли лицензионный Minecraft?<span class="faq-arrow"></span></button><div class="faq-a"><p>Нет. Milano работает офлайн: войди под своим ником, лаунчер сам скачает Minecraft 1.21.11 и Fabric при первом запуске.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">На каких серверах работает Milano?<span class="faq-arrow"></span></button><div class="faq-a"><p>На популярных серверах: SpookyTime, FunTime, HolyWorld, ReallyWorld, Anarchy и других. Клиент адаптирован под их защиты.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Игра не запускается — что делать?<span class="faq-arrow"></span></button><div class="faq-a"><p>Проверь Java 21 и 4 ГБ свободной RAM, затем открой C:/Milano/milano-launch.log — там причина ошибки. Чаще всего помогает переустановка Java 21.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Забыл пароль от аккаунта?<span class="faq-arrow"></span></button><div class="faq-a"><p>Напиши в поддержку, укажи свой логин — выдадим новый пароль и поможем войти.</p></div></div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-brand"><img src="assets/logo-noncolor.png" alt="Milano" loading="lazy" decoding="async"><span>Milano</span></div>
+<p class="footer-note">Клиент создан для ознакомительных целей. Используйте ответственно на своих серверах.</p>
+<a class="footer-tg" href="https://t.me/milano_dlc" target="_blank" rel="noopener" aria-label="Telegram — @milano_dlc" title="Telegram — @milano_dlc"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.04 15.9l-.38 4.24c.55 0 .79-.24 1.08-.53l2.6-2.48 5.38 3.94c.99.55 1.69.26 1.95-.91L22.9 4.6c.31-1.42-.51-1.97-1.48-1.63L2.4 9.6c-1.4.54-1.38 1.32-.24 1.67l4.9 1.53L18.44 7.3c.54-.36 1.03-.16.62.2L9.04 15.9z"/></svg></a>
+<nav class="footer-links"><a href="#features">Возможности</a><a href="prices.html">Цены</a><a href="#cosmetics">Косметика</a><a href="#requirements">Запуск</a><a href="#start">Старт</a><a href="#faq">FAQ</a><a href="#about">Комьюнити</a></nav>
+<p class="footer-copy">Milano 1.0.0 · Minecraft 1.21.11 · Fabric Loader 0.19.3 · Windows 10/11</p>
+<p class="footer-copy">&copy; 2026 Milano. Все права защищены.</p>
+</div>
+</footer>
+<button class="back-top" id="backTop" aria-label="Наверх"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<a href="login.html" class="mobile-cta" id="mobileCta">Войти</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

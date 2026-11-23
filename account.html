@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аккаунт — Milano</title>
+<meta name="description" content="Аккаунт Milano: тариф, статус и скачивание лаунчера.">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#account">Перейти к аккаунту</a>
+<div class="bg-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<header class="nav" id="nav">
+<div class="nav-inner">
+<a class="brand" href="index.html#top"><img src="assets/logo-noncolor.png" alt="Milano" class="brand-mark"><span class="brand-name">Milano</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html#features">Возможности</a>
+<a href="prices.html">Цены</a>
+<a href="index.html#start">Старт</a>
+<a href="index.html#faq">FAQ</a>
+<a href="index.html#about">Комьюнити</a>
+</nav>
+<div class="nav-actions">
+<a href="account.html" class="btn btn-primary nav-cta" id="navAuthBtn">Аккаунт</a>
+<button class="nav-burger" id="navBurger" aria-label="Меню" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id="top">
+<section class="section" id="account">
+<div class="section-head reveal"><p class="eyebrow">Личный кабинет</p><h2 class="section-title">Мой аккаунт</h2><p class="section-lead">Тариф, лаунчер и запуск игры — всё в одном месте.</p></div>
+<div class="account-layout">
+<div class="account-main">
+<section class="account-profile reveal">
+<div style="display:flex;gap:16px;align-items:center">
+<div class="account-avatar" id="accountAvatar">M</div>
+<div><p class="account-name" id="accountLogin">—</p><p class="account-status"><span class="status-dot"></span><b id="accountStatus">Активен</b></p></div>
+</div>
+<div style="margin-top:20px">
+<div class="account-row"><span>Тариф</span><b id="accountPlan">Не выбран</b></div>
+<div class="account-row"><span>Клиент</span><b>Milano 1.0.0 · Minecraft 1.21.11</b></div>
+<div class="account-row"><span>Загрузчик</span><b>Fabric Loader 0.19.3</b></div>
+<div class="account-row"><span>Папка игры</span><b>C:/Milano</b></div>
+<div class="account-row"><span>Платформа</span><b>Windows 10/11</b></div>
+</div>
+<p class="download-meta" id="accountPlanDesc" style="margin-top:16px">Выбери тариф на странице Цены, чтобы открыть доступ.</p>
+</section>
+<section class="account-key reveal">
+<h3 style="font-size:20px;margin-bottom:8px">Активация ключа</h3>
+<p style="color:var(--muted);font-size:14px">Есть ключ подписки? Введи его — тариф включится сразу, без оплаты на сайте.</p>
+<form id="keyForm" style="margin-top:16px">
+<label for="keyInput" style="display:block;font-size:13px;color:var(--muted);margin-bottom:6px;text-align:left">Ключ подписки</label>
+<input type="text" id="keyInput" placeholder="MILANO-MONTH-AB12-CD34" autocomplete="off" spellcheck="false" style="width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line-2);background:rgba(255,255,255,0.05);outline:0;text-transform:uppercase">
+<p class="auth-error" id="keyMessage" style="min-height:18px"></p>
+<button class="btn btn-primary" type="submit" style="width:100%;margin-top:10px">Активировать ключ</button>
+</form>
+<p class="download-meta">Формат: MILANO-MONTH-XXXX-XXXX — месяц, MILANO-3MON-XXXX-XXXX — 3 месяца, MILANO-LIFE-XXXX-XXXX — навсегда.</p>
+<div id="keyHistoryWrap" hidden style="margin-top:16px">
+<p style="font-size:13px;font-weight:700;margin-bottom:6px">Активированные ключи</p>
+<ul id="keyHistory" class="account-list" style="margin-top:0"></ul>
+</div>
+</section>
+<section class="account-launch reveal">
+<figure class="account-hero-img"><img src="Глянцевые волны чёрного металла.png" alt="Milano — глянцевые волны чёрного металла" loading="lazy" decoding="async"><figcaption>Milano 1.0.0 · Minecraft 1.21.11 · Fabric Loader 0.19.3</figcaption></figure>
+<h3 style="font-size:20px;margin-bottom:8px">Запуск игры</h3>
+<p style="color:var(--muted);font-size:14px">Лаунчер сам скачает Minecraft и Fabric при первом запуске, дальше игра открывается в один клик.</p>
+<div class="account-actions"><a href="downloads/Milano Launcher Setup 1.0.0.exe" class="btn btn-primary btn-lg" id="downloadBtn" download>Скачать лаунчер</a></div>
+<p class="download-meta">126 МБ · Windows 10/11 · Первый запуск — в C:/Milano</p>
+<ol class="account-steps"><li><b>1.</b><span>Скачай и установи лаунчер</span></li><li><b>2.</b><span>Войди под своим логином</span></li><li><b>3.</b><span>Нажми «Запустить» и зайди на сервер</span></li></ol>
+</section>
+</div>
+<aside class="account-side">
+<section class="account-plan reveal">
+<h3 style="font-size:20px;margin-bottom:8px">Что входит в тариф</h3>
+<ul class="account-list"><li>Все функции клиента и лаунчер</li><li>Обход на SpookyTime, FunTime, HolyWorld, ReallyWorld, Anarchy</li><li>Косметика: шляпы, крылья, питомцы и боди</li><li>Обновления под новые версии Minecraft</li><li>Поддержка в Telegram</li></ul>
+<div class="account-actions"><a href="prices.html" class="btn btn-ghost">Сменить тариф</a><a href="https://t.me/milano_dlc" target="_blank" rel="noopener" class="btn btn-ghost">Telegram — @milano_dlc</a></div>
+</section>
+<section class="account-support reveal">
+<h3 style="font-size:20px;margin-bottom:8px">Поддержка</h3>
+<p style="color:var(--muted);font-size:14px">Не запускается игра или забыл пароль? Напиши в Telegram, укажи свой логин — поможем войти и доведём до игры.</p>
+<div class="account-actions"><a href="https://t.me/milano_dlc" target="_blank" rel="noopener" class="btn btn-primary">Написать в Telegram</a><a href="index.html#faq" class="btn btn-ghost">Частые вопросы</a><button class="btn btn-ghost" id="logoutBtn" type="button">Выйти</button></div>
+</section>
+</aside>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-brand"><img src="assets/logo-noncolor.png" alt="Milano" loading="lazy" decoding="async"><span>Milano</span></div>
+<p class="footer-note">Клиент создан для ознакомительных целей. Используйте ответственно на своих серверах.</p>
+<a class="footer-tg" href="https://t.me/milano_dlc" target="_blank" rel="noopener" aria-label="Telegram — @milano_dlc" title="Telegram — @milano_dlc"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.04 15.9l-.38 4.24c.55 0 .79-.24 1.08-.53l2.6-2.48 5.38 3.94c.99.55 1.69.26 1.95-.91L22.9 4.6c.31-1.42-.51-1.97-1.48-1.63L2.4 9.6c-1.4.54-1.38 1.32-.24 1.67l4.9 1.53L18.44 7.3c.54-.36 1.03-.16.62.2L9.04 15.9z"/></svg></a>
+<nav class="footer-links"><a href="index.html#features">Возможности</a><a href="prices.html">Цены</a><a href="index.html#start">Старт</a><a href="index.html#faq">FAQ</a><a href="index.html#about">Комьюнити</a></nav>
+<p class="footer-copy">Milano 1.0.0 · Minecraft 1.21.11 · Fabric Loader 0.19.3 · Windows 10/11</p>
+<p class="footer-copy">&copy; 2026 Milano. Все права защищены.</p>
+</div>
+</footer>
+<button class="back-top" id="backTop" aria-label="Наверх"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function () { var l = document.getElementById('accountLogin'); var a = document.getElementById('accountAvatar'); if (l && a && l.textContent.trim() !== '—') { a.textContent = l.textContent.trim().charAt(0).toUpperCase(); } var p = document.getElementById('accountPlan'); var d = document.getElementById('accountPlanDesc'); if (p && d) { var v = p.textContent; if (v.indexOf('Месяц') === 0) { d.textContent = 'Доступ на 30 дней — все функции клиента и лаунчер.'; } else if (v.indexOf('3 месяца') === 0) { d.textContent = 'Доступ на 90 дней — все функции клиента и лаунчер.'; } else if (v.indexOf('Навсегда') === 0) { d.textContent = 'Доступ навсегда — все функции клиента и лаунчер.'; } } });</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Вход и регистрация — Milano</title>
+<meta name='description' content='Вход и регистрация в аккаунте Milano.'>
+<meta name='theme-color' content='#07080c'>
+<link rel='icon' href='assets/logo.png'>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='styles.css'>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<a class='skip-link' href='#login'>Перейти к форме входа</a>
+<div class='bg-orbs' aria-hidden='true'><span class='orb orb-1'></span><span class='orb orb-2'></span><span class='orb orb-3'></span></div>
+<header class='nav' id='nav'>
+<div class='nav-inner'>
+<a class='brand' href='index.html#top'><img src='assets/logo-noncolor.png' alt='Milano' class='brand-mark'><span class='brand-name'>Milano</span></a>
+<nav class='nav-links' id='navLinks'>
+<a href='index.html#features'>Возможности</a>
+<a href='prices.html'>Цены</a>
+<a href='index.html#start'>Старт</a>
+<a href='index.html#faq'>FAQ</a>
+<a href='index.html#about'>Комьюнити</a>
+</nav>
+<div class='nav-actions'>
+<a href='login.html' class='btn btn-primary nav-cta' id='navAuthBtn'>Войти</a>
+<button class='nav-burger' id='navBurger' aria-label='Меню' aria-expanded='false' aria-controls='navLinks'><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main id='top'>
+<section class='section' id='login'>
+<div class='glass-card auth-panel reveal' style='text-align:center'>
+<img src='assets/logo-noncolor.png' alt='Milano' class='auth-logo' loading='lazy' decoding='async'>
+<h2 class='section-title' id='authTitle'>Вход в аккаунт</h2>
+<p class='section-lead' id='authLead'>Введи логин и пароль, чтобы скачать лаунчер и играть.</p>
+<div class='auth-tabs' role='tablist' aria-label='Вход и регистрация'>
+<button class='auth-tab-btn active' type='button' data-auth-tab='login'>Вход</button>
+<button class='auth-tab-btn' type='button' data-auth-tab='register'>Регистрация</button>
+</div>
+<form id='loginForm'>
+<label for='loginInput'>Логин</label>
+<input type='text' id='loginInput' autocomplete='username' required>
+<label for='passwordInput'>Пароль</label>
+<input type='password' id='passwordInput' autocomplete='current-password' required>
+<p class='auth-error' id='loginError'></p>
+<button class='btn btn-primary btn-lg' type='submit' style='width:100%;margin-top:10px'>Войти</button>
+</form>
+<form id='registerForm' hidden>
+<label for='registerLoginInput'>Придумай логин</label>
+<input type='text' id='registerLoginInput' autocomplete='username' minlength='3' required>
+<label for='registerEmailInput'>Почта</label>
+<input type='email' id='registerEmailInput' autocomplete='email' placeholder='name@example.com' required>
+<label for='registerPasswordInput'>Придумай пароль</label>
+<input type='password' id='registerPasswordInput' autocomplete='new-password' minlength='4' required>
+<label for='registerPasswordConfirmInput'>Повтори пароль</label>
+<input type='password' id='registerPasswordConfirmInput' autocomplete='new-password' minlength='4' required>
+<p class='auth-error' id='registerError'></p>
+<button class='btn btn-primary btn-lg' type='submit' style='width:100%;margin-top:10px'>Зарегистрироваться</button>
+</form>
+<p class='download-meta'><span id='authSwitchPrefix'>Нет аккаунта?</span> <button class='auth-link' type='button' id='authSwitchBtn'>Зарегистрироваться</button></p>
+</div>
+</section>
+</main>
+<footer class='footer'>
+<div class='footer-inner'>
+<div class='footer-brand'><img src='assets/logo-noncolor.png' alt='Milano' loading='lazy' decoding='async'><span>Milano</span></div>
+<p class='footer-note'>Клиент создан для ознакомительных целей. Используйте ответственно на своих серверах.</p>
+<a class='footer-tg' href='https://t.me/milano_dlc' target='_blank' rel='noopener' aria-label='Telegram — @milano_dlc' title='Telegram — @milano_dlc'><svg width='18' height='18' viewBox='0 0 24 24' fill='currentColor' aria-hidden='true'><path d='M9.04 15.9l-.38 4.24c.55 0 .79-.24 1.08-.53l2.6-2.48 5.38 3.94c.99.55 1.69.26 1.95-.91L22.9 4.6c.31-1.42-.51-1.97-1.48-1.63L2.4 9.6c-1.4.54-1.38 1.32-.24 1.67l4.9 1.53L18.44 7.3c.54-.36 1.03-.16.62.2L9.04 15.9z'/></svg></a>
+<nav class='footer-links'><a href='index.html#features'>Возможности</a><a href='prices.html'>Цены</a><a href='index.html#start'>Старт</a><a href='index.html#faq'>FAQ</a><a href='index.html#about'>Комьюнити</a></nav>
+<p class='footer-copy'>Milano 1.0.0 · Minecraft 1.21.11 · Fabric Loader 0.19.3 · Windows 10/11</p>
+<p class='footer-copy'>&copy; 2026 Milano. Все права защищены.</p>
+</div>
+</footer>
+<button class='back-top' id='backTop' aria-label='Наверх'><svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.4'><polyline points='18 15 12 9 6 15'></polyline></svg></button>
+<div class='toast' id='toast' role='status' aria-live='polite'></div>
+<script src='auth.js'></script>
+<script src='app.js'></script>
+</body>
+</html>
